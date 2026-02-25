@@ -1,10 +1,15 @@
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
 # terra_project
-
 Structured research repository for the TERRA project, providing reproducible analysis workflows, documentation, and curated outputs.
-
 ---
+
+## Licensing
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docs License: CC%20BY%204.0](https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+- Source code in this repository is licensed under the MIT License.
+- Documentation, figures, and other non-code materials are licensed under CC BY 4.0.
+
+See the LICENSE and LICENSE-docs files for details.
 
 ## Repository Role
 
@@ -34,6 +39,10 @@ Only validated and structured materials are committed to this repository.
 ## Repository Structure
 ```
 terra_project/
+├── LICENSE  # MIT
+├── LICENSE-docs  # CC BY 4.0 
+├── README.md
+├── .gitignore
 ├── docs/ # Management documents
 ├── data/ # Processed data (raw excluded)
 ├── scripts/ # Reproducible analysis code
