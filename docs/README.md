@@ -1,4 +1,4 @@
-# 📘 Data Management Plan – #TERRA Project
+# 📘 Data Management Plan
 
 ## Project Title
 **#TERRA: Paths to Sustainability in Adolescence**
