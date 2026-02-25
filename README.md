@@ -30,14 +30,16 @@ Only validated and structured materials are committed to this repository.
 ---
 
 ## Repository Structure
-terra_project/  
-├── docs/ # Management documents\\
-├── data/ # Processed data (raw excluded)\\
-├── scripts/ # Reproducible analysis code\\
-├── results/ # Final figures and tables\\
-├── paper/ # Manuscripts materials\\
-├── presentations/ # Conference and workshops slides\\
-└── reports/ # Technical documentation\\
+```
+terra_project/
+├── docs/ # Management documents
+├── data/ # Processed data (raw excluded)
+├── scripts/ # Reproducible analysis code
+├── results/ # Final figures and tables
+├── paper/ # Manuscript materials
+├── presentations/ # Conference and workshop slides
+└── reports/ # Technical documentation
+```
 
 
 ---
