@@ -1,4 +1,4 @@
-DOI: https://doi.org/10.5281/zenodo.18773549
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18773549.svg)](https://doi.org/10.5281/zenodo.18773549)
 Version: 1.0
 Date: 25 February 2026
 
