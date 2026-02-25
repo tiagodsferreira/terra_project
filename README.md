@@ -1,3 +1,5 @@
+https://doi.org/10.5281/zenodo.18773549
+
 # #TERRA.: Paths to Sustainability in Adolescence (COMPETE2030-FEDER-00903800)
 Structured research repository for the TERRA project, providing reproducible analysis workflows, documentation, and curated outputs.
 ---
