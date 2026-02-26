@@ -1,21 +1,19 @@
 # 📘 Data Management Plan (DMP) - **#TERRA: Paths to Sustainability in Adolescence**
 
-## Institution
-Center for Psychology at the University of Porto (CPUP)  
-Faculty of Psychology and Education Sciences – University of Porto  
-
+## Authors, Institution
+Tiago Ferreira, Center for Psychology at the University of Porto
+Filipa NUnes, Center for Psychology at the University of Porto
 ---
 
 # 1. Repository Purpose
-
-This repository contains the LaTeX source files for the Data Management Plan (DMP) of the #TERRA project. The DMP describes the procedures for:
-
-- Data collection and processing  
-- Documentation and metadata standards  
-- Storage and security protocols  
-- Personal data protection and GDPR compliance  
-- Data sharing and licensing  
-- Long-term preservation strategy  
+This repository contains the LaTeX source files for the DMP of the #TERRA. project (COMPETE2030-FEDER-00903800).
+The DMP describes the procedures for:
+- Data collection and processing
+- Documentation and metadata standards
+- Storage and security protocols
+- Personal data protection and GDPR compliance
+- Data sharing and licensing
+- Long-term preservation strategy
 
 ---
 
@@ -32,13 +30,10 @@ This repository contains the LaTeX source files for the Data Management Plan (DM
 
 # 3. Compilation Instructions
 
-The document is compiled using **XeLaTeX**.
-
-To compile locally:
+The document is compiled using **XeLaTeX**. To compile locally:
 ```
 xelatex main.tex
 ```
 Recommended editors:
 - TeXmaker
 - Overleaf (with XeLaTeX selected as compiler)
-
