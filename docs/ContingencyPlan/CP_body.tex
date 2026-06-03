@@ -1,0 +1,193 @@
+% contingency_plan_body.tex
+% Use in place of body.tex in the #TERRA DMP template.
+% Requires in preamble (main.tex): array, booktabs, xcolor, colortbl, longtable, caption
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% Table caption styling (uses caption package loaded in main_contingency.tex)
+\captionsetup[table]{
+  labelfont=bf,
+  textfont=it,
+  labelsep=period,
+  justification=raggedright,
+  singlelinecheck=false,
+  skip=4pt
+}
+
+\renewcommand{\arraystretch}{1.5}
+
+% ============================================================
+\section*{Contingency Plan}
+% ============================================================
+
+\subsection*{Project Information}
+
+\begin{tabular}{@{}P{3.5cm}P{11cm}}
+\textbf{Title:}       & \#TERRA. Paths to Sustainability in Adolescence \\[4pt]
+\textbf{Reference:}   & COMPETE2030-FEDER-00903800 \\[4pt]
+\textbf{Funding:}     & COMPETE 2030 and Portugal 2030 programmes; European Union \\[4pt]
+\textbf{Host:}        & Faculty of Psychology and Education Sciences at the University of Porto (FPCEUP); Center for Psychology at the University of Porto (CPUP) \\[4pt]
+\textbf{Start date:}  & September 2025 \\[4pt]
+\textbf{End date:}    & September 2028 \\[4pt]
+\end{tabular}
+
+\vspace{0.5cm}
+
+\noindent\textbf{Research team:}
+\begin{itemize}
+  \item Tiago Ferreira (PI) | \href{mailto:tiagoferreira@fpce.up.pt}{tiagoferreira@fpce.up.pt}
+  \item Filipa Nunes | \href{mailto:fnunes@fpce.up.pt}{fnunes@fpce.up.pt}
+  \item H\'{e}lder Sp\'{i}nola | \href{mailto:hspinola@staff.uma.pt}{hspinola@staff.uma.pt}
+  \item Marisa Matias | \href{mailto:marisa@fpce.up.pt}{marisa@fpce.up.pt}
+  \item Paula Mena Matos | \href{mailto:pmmatos@fpce.up.pt}{pmmatos@fpce.up.pt}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\noindent\textit{This contingency plan is part of project \#TERRA. Paths to Sustainability in Adolescence, which was funded by the COMPETE 2030 and Portugal 2030 programmes and co-financed by the European Union (COMPETE2030-FEDER-00903800).}
+
+\vspace{0.8cm}
+
+\noindent The following sections identify potential risks to the project's data management activities, their assessed risk level, and the mitigation strategies in place. Risks are organised into two main areas: general project-wide risks (Section~1) and study-specific risks (Section~2). For each study, a narrative summary highlights the most critical risks and the rationale for the strategies adopted.
+
+% ============================================================
+\section*{Section 1. Anticipated Risks for the Project}
+% ============================================================
+
+The project faces four general risks that cut across all studies and data management activities. The most consequential is \textbf{non-compliance with GDPR}, rated as a medium risk given the volume of personal data collected from minors across multiple studies and time points. To address this, the team has prepared an approved Data Management Plan (DMP) that specifies pseudonymization procedures, the creation of a synthetic copy of the dataset for open sharing, and a programme of internal audits and team training. These measures collectively ensure that any processing of participants' personal data is lawful, transparent, and proportionate throughout the project lifecycle.
+
+A second priority concern is the risk of \textbf{delays in data collection authorizations}, also rated medium. The project must secure approvals from multiple bodies (Ethics Committee, Data Protection Unit, Ministry of Education, and individual School Boards) before fieldwork can begin. To avoid timeline slippage, the team will submit documentation well in advance and maintain a complete and ready set of supporting materials; an online-only data collection alternative has been prepared as a fallback if in-person access is delayed. The remaining general risks --- data loss or corruption and failures in storage platforms --- are rated low, and are managed through automated daily backups and multi-service redundancy.
+
+\vspace{0.5cm}
+
+% ---- TABLE 1 ----
+\begin{table}[h!]
+\centering
+\caption{General project-wide risks and mitigation strategies.}
+\begin{tabular}{|P{5.2cm}|P{2.0cm}|P{7.1cm}|}
+\hline
+\rowcolor[HTML]{D9E1F2}
+\textbf{Identified Potential Risks} & \textbf{Risk Level} & \textbf{Mitigation Strategies} \\
+\hline
+Loss or corruption of data
+  & Low
+  & Automated daily backups (cloud + external drive); weekly verification; recovery plan within 48~hours. \\
+\hline
+Delays in authorizations for data collection (Ethics Committee, Data Protection Unit, Ministry of Education, School Boards)
+  & Medium
+  & Early submission; complete documentation; alternative plan (online data collection). \\
+\hline
+Non-compliance with GDPR
+  & Medium
+  & Approved DMP; pseudonymization; synthetic copy for open data; team training; internal audits. \\
+\hline
+Failures in storage platforms (cloud/repositories)
+  & Low
+  & Redundancy across multiple services; offline backups; recovery plan. \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================
+\section*{Section 2. Potential Risks by Study}
+% ============================================================
+
+% ---- STUDY 3 ----
+\subsection*{Study 3 -- National Survey}
+
+Study 3 is a nationally representative cross-sectional survey of 600 adolescents, conducted by an external specialised company using online and telephone interview methods. Because data collection is outsourced, the team has less direct operational control than in the other studies, which shapes the risk profile. All three identified risks are rated low.
+
+The most important risk for this study is \textbf{data quality}, in particular non-response and repetitive response patterns (straightlining) that can arise in large-scale telephone and online surveys. To address this, the research team will implement continuous Quality Assurance monitoring throughout data collection, with automated filters flagging anomalous response patterns and structured follow-up contacts to minimise non-response. A close second in priority is ensuring \textbf{adequate representativeness} of all population strata; if any sub-group is undersampled, the team will apply quota adjustments and post-stratification weighting to restore the representativeness of the final dataset. Finally, potential \textbf{delays from the external company} will be managed contractually through a Service Level Agreement specifying delivery milestones, giving the team formal recourse if timelines are not met.
+
+\vspace{0.5cm}
+
+% ---- TABLE 2 ----
+\begin{table}[h!]
+\centering
+\caption{Risks and mitigation strategies for Study 3 (National Survey).}
+\begin{tabular}{|P{5.2cm}|P{2.0cm}|P{7.1cm}|}
+\hline
+\rowcolor[HTML]{D9E1F2}
+\textbf{Identified Potential Risks} & \textbf{Risk Level} & \textbf{Mitigation Strategies} \\
+\hline
+Delays from external company
+  & Low
+  & Service Level Agreement with delivery milestones. \\
+\hline
+Underrepresentation of strata
+  & Low
+  & Quota adjustment; oversampling; post-stratification weighting. \\
+\hline
+Data quality (non-response, repetitive patterns)
+  & Low
+  & Quality Assurance monitoring; automated filters; follow-up contacts. \\
+\hline
+\end{tabular}
+\end{table}
+
+% ---- STUDY 4 ----
+\subsection*{Study 4 -- Longitudinal Study}
+
+Study 4 is a longitudinal design involving 500 adolescents, approximately 1{,}000 parents, and approximately 25 school heads, assessed across three time points over 18 months. The extended timeline and multi-informant structure make this the most operationally complex study in the project, and all three identified risks carry a medium rating.
+
+The most critical risk is \textbf{participant attrition between waves}, which, if it exceeds 20\%, could jeopardize the statistical power of longitudinal analyses and introduce systematic bias. The mitigation strategy combines proactive retention efforts (multi-channel reminders via email, SMS, and school liaisons) with a Planned Missing Data Design, which structures the assessment battery so that analyses remain valid even with incomplete data from some participants. Equally important is \textbf{insufficient initial recruitment}: if the target sample is not reached at baseline, longitudinal power will be further compromised. The team will conduct awareness sessions in partner schools and allow for an extended recruitment period to ensure adequate enrolment. Finally, \textbf{delayed authorizations} from the Ethics Committee, Data Protection Unit, Ministry of Education, or School Boards remain a medium-risk concern for this study as well, given the sensitivity of longitudinal data collection involving minors; the same early-submission and online-alternative strategy applied at the project level will be deployed here.
+
+\vspace{0.5cm}
+
+% ---- TABLE 3 ----
+\begin{table}[h!]
+\centering
+\caption{Risks and mitigation strategies for Study 4 (Longitudinal Study).}
+\begin{tabular}{|P{5.2cm}|P{2.0cm}|P{7.1cm}|}
+\hline
+\rowcolor[HTML]{D9E1F2}
+\textbf{Identified Potential Risks} & \textbf{Risk Level} & \textbf{Mitigation Strategies} \\
+\hline
+Attrition between waves ($>$20\%)
+  & Medium
+  & Multi-channel notifications; Planned Missing Data Design. \\
+\hline
+Insufficient recruitment
+  & Medium
+  & Awareness sessions; extended recruitment period. \\
+\hline
+Delayed authorizations
+  & Medium
+  & Early submission; alternative online data collection plan. \\
+\hline
+\end{tabular}
+\end{table}
+
+% ---- STUDY 5 ----
+\subsection*{Study 5 -- Diary Study}
+
+Study 5 is an intensive longitudinal diary study involving 280 adolescents who will complete three daily assessments per day over two weeks, yielding a high-frequency dataset of intra-individual fluctuations in ecological behavior. The demanding measurement schedule introduces risks specific to repeated-measures mobile data collection, two of which are rated medium.
+
+The most pressing concern is \textbf{low daily adherence}: if participants complete fewer than 70\% of the daily surveys, within-person analyses will lose reliability and statistical power. The team will address this through optimised push notifications timed to reduce participant burden, combined with micro-incentives contingent on adherence thresholds. Closely related is the risk of \textbf{response bias due to fatigue} (straightlining or inattentive responding), which is particularly likely in the later days of a two-week protocol. Item randomization within each daily survey, the inclusion of attention-check items, and motivational messages sent to participants are the primary countermeasures. Finally, \textbf{technical platform failures} are rated low given that robust backup procedures and redundancy protocols are in place; an SMS-based short-link alternative survey is prepared in the event of app or platform outages.
+
+\vspace{0.5cm}
+
+% ---- TABLE 4 ----
+\begin{table}[h!]
+\centering
+\caption{Risks and mitigation strategies for Study 5 (Diary Study).}
+\begin{tabular}{|P{5.2cm}|P{2.0cm}|P{7.1cm}|}
+\hline
+\rowcolor[HTML]{D9E1F2}
+\textbf{Identified Potential Risks} & \textbf{Risk Level} & \textbf{Mitigation Strategies} \\
+\hline
+Low daily adherence ($<$70\%)
+  & Medium
+  & Optimized notifications; micro-incentives tied to adherence thresholds. \\
+\hline
+Technical issues (platform)
+  & Low
+  & Backups; redundancy; alternative channel (SMS/short link). \\
+\hline
+Bias due to fatigue (straightlining)
+  & Medium
+  & Item randomization; attention checks; motivational messages. \\
+\hline
+\end{tabular}
+\end{table}
+

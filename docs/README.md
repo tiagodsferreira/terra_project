@@ -13,3 +13,4 @@ Ferreira, T., & Nunes, F. (2026). #TERRA data management plan (Version 1.0) [Dat
 - Dissemination Strategy Guide (DSG)
 
 - Contingency Plan (CP)
+Ferreira, T., & Nunes, F. (2026). #TERRA Contingency Plan (Version 1.0) [Contingency Plan].
