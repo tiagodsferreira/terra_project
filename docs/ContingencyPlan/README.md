@@ -1,4 +1,4 @@
-# 📘 Data Management Plan (DMP) & Contingency Plan — **#TERRA: Paths to Sustainability in Adolescence**
+# 📘 Contingency Plan — **#TERRA: Paths to Sustainability in Adolescence**
 
 ## Authors, Institution
 Tiago Ferreira, Center for Psychology at the University of Porto  
