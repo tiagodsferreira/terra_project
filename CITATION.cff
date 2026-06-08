@@ -10,7 +10,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-1315-3327"
     affiliation: "Center for Psychology at the University of Porto, Faculty of Psychology and Education Sciences, University of Porto"
 title: "Terra Project: Research Data Management and Documentation"
-version: "1.1.1" # Updated to reflect your new retry tag
+version: "1.1.1"
 date-released: "2026-06-08"
 url: "https://github.com/tiagodsferreira/terra_project"
 repository-code: "https://github.com/tiagodsferreira/terra_project"
