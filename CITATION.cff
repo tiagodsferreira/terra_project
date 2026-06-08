@@ -1,22 +1,22 @@
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software or data documentation, please cite it as below."
 authors:
-  - family-names: "Ferreira"
-    given-names: "Tiago"
-    orcid: "https://orcid.org/0000-0002-2884-2547"
-    affiliation: "Center for Psychology at the University of Porto, Faculty of Psychology and Education Sciences, University of Porto"
-  - family-names: "Nunes"
-    given-names: "Filipa"
-    orcid: "https://orcid.org/0000-0002-1315-3327" 
-    affiliation: "Center for Psychology at the University of Porto, Faculty of Psychology and Education Sciences, University of Porto"
-title: "Terra Project: Paths to Sustainability in Adolescence"
-version: "1.1.0" # You can update this to match your next GitHub release tag
-date-released: "2026-06-08" # Use today's date or the date of your upcoming release
-repository-code: "https://github.com/tiagodsferreira/terra_project"
+  - family-names: "Ferreira"
+    given-names: "Tiago"
+    orcid: "https://orcid.org/0000-0002-2884-2547"
+    affiliation: "Center for Psychology at the University of Porto, Faculty of Psychology and Education Sciences, University of Porto"
+  - family-names: "Nunes"
+    given-names: "Filipa"
+    orcid: "https://orcid.org/0000-0002-1315-3327"
+    affiliation: "Center for Psychology at the University of Porto, Faculty of Psychology and Education Sciences, University of Porto"
+title: "Terra Project: Research Data Management and Documentation"
+version: "1.1.1" # Updated to reflect your new retry tag
+date-released: "2026-06-08"
 url: "https://github.com/tiagodsferreira/terra_project"
-license: "CC-BY-4.0" # Standard open-access data/documentation license (or MIT/Apache if software)
+repository-code: "https://github.com/tiagodsferreira/terra_project"
+license: "CC-BY-4.0"
 keywords:
-  - "terra project"
-  - "data management"
-  - "contingency plan"
-  - "dissemination strategy"
+  - "terra project"
+  - "data management"
+  - "contingency plan"
+  - "dissemination strategy"
