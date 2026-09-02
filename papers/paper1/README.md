@@ -6,9 +6,7 @@ This repository contains the complete R workflow for analyzing the New Ecologica
 
 ```
 ├── data/
-│   ├── data.sav              # Raw input data
-│   ├── data_preped.sav       # Prepared data (output of script 1)
-│   └── data_clean.sav        # Cleaned data (output of script 3)
+│   ├── data.sav              # Raw inp
 ├── code/
 │   ├── 1_Data_Prep.r         # Import, exclusion criteria, age calculation, reverse-coding
 │   ├── 2_Missing_Data_Analysis.R # MCAR/MAR tests, missing patterns, response rates
