@@ -29,6 +29,9 @@ has_2 <- apply(data_clean[cols_2], 1, function(row) any(!is.na(row)))
 n_has_1 <- sum(has_1)
 n_has_2 <- sum(has_2)
 n_both  <- sum(has_1 & has_2)
+n_only_1 <- sum(has_1 & !has_2)
+n_only_2 <- sum(has_2 & !has_1)
+n_none   <- sum(!has_1 & !has_2)   # linhas sem resposta em nenhum dos grupos
 
 cat("\n--- Information completeness for .1 and .2 columns ---\n")
 cat("Columns ending with .1:", paste(cols_1, collapse = ", "), "\n")
@@ -36,6 +39,9 @@ cat("Columns ending with .2:", paste(cols_2, collapse = ", "), "\n")
 cat("Rows with at least one response in .1 columns:", n_has_1, "\n")
 cat("Rows with at least one response in .2 columns:", n_has_2, "\n")
 cat("Rows with information in both .1 and .2:", n_both, "\n\n")
+cat("Rows with information only in .1 columns:", n_only_1, "\n")
+cat("Rows with information only in .2 columns:", n_only_2, "\n")
+cat("Rows with no information in either group:", n_none, "\n\n")
 
 # 2. DESCRIPTIVE & FREQUENCY STATISTICS FUNCTIONS -----------------------------
 
