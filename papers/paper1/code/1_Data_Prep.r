@@ -43,10 +43,8 @@ cols_father <- names(data)[grepl("\\.2$", names(data))]
 idx_nb <- which(data$id_crianca == "25.50.moli2702")
 data[idx_nb, cols_father] <- NA
 
-## 1.1.epar2202 — same‑sex couple
-idx_same_sex <- which(data$id_crianca == "11.21.evic1503")
-data[idx_same_sex, cols_mother] <- NA
-data[idx_same_sex, cols_father] <- NA
+## 1.1.epar2202 — same‑sex couple (remove entire row)
+data <- data[data$id_crianca != "11.21.evic1503", ]
 
 # 3. REVERSE-CODE ITEMS -----------------------------------------------------
 
