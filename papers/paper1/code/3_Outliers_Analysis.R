@@ -175,7 +175,6 @@ print_results(res_father)
 # Decision rule: only participants that were multivariate (Mahalanobis) outliers
 # AND univariate were excluded.
 
-
 ids_remove_mother <- c("1.1.fmar2602", 
                        "10.14.raze2704", 
                        "10.14.vcoe0204",
@@ -207,12 +206,26 @@ data_clean[data_clean$id_crianca %in% ids_remove_father, cols_father] <- NA
 ids_remove_both <- intersect(ids_remove_mother, ids_remove_father)
 data_clean <- data_clean[!(data_clean$id_crianca %in% ids_remove_both), ]
 
+# 7. REMOVE ROWS WITH NO VALID NEPS ITEMS FROM EITHER PARENT ------------------
+
+all_neps_vars <- c(varnames_mother, varnames_father)
+
+# Identify rows where ALL NEPS items (mother + father) are NA
+rows_all_na <- apply(data_clean[, all_neps_vars], 1, function(x) all(is.na(x)))
+
+# Remove those rows
+data_clean <- data_clean[!rows_all_na, ]
+
 # Verification
-cat("Original cases          :", nrow(data), "\n")
-cat("Final file cases        :", nrow(data_clean), "\n")
-cat("Mother columns set to NA:", sum(data$id_crianca %in% setdiff(ids_remove_mother, ids_remove_both)), "\n")
-cat("Father columns set to NA:", sum(data$id_crianca %in% setdiff(ids_remove_father, ids_remove_both)), "\n")
-cat("Children fully removed  :", length(ids_remove_both), "\n")
+cat("\n----------------------------------------\n")
+cat("VERIFICATION\n")
+cat("Original cases                   :", nrow(data), "\n")
+cat("Final file cases                 :", nrow(data_clean), "\n")
+cat("Mother columns set to NA         :", sum(data$id_crianca %in% setdiff(ids_remove_mother, ids_remove_both)), "\n")
+cat("Father columns set to NA         :", sum(data$id_crianca %in% setdiff(ids_remove_father, ids_remove_both)), "\n")
+cat("Children fully removed (both)    :", length(ids_remove_both), "\n")
+cat("Additional rows removed (no NEPS):", nrow(data) - nrow(data_clean) - length(ids_remove_both), "\n")
+cat("----------------------------------------\n")
 
 write_sav(data_clean, "../data/data_clean.sav")
 
