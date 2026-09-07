@@ -18,6 +18,8 @@ This repository contains the complete R workflow for analyzing the New Ecologica
 │   ├── 8_NEPS_Descriptives.r # Item-level stats, composite scores, and combined correlation matrix
 │   ├── 9_NEPS_Compare_Models.r # Fit indices and Omega comparison across 1D, 2D, and 5D models
 │   └── 10_NEPS_Diadic_Model.r # Dyadic invariance (configural, metric, scalar, strict) and Wald tests
+├── codebook/
+│   └── codebook_english.csv # codebook for the study dataset  
 └── README.md
 ```
 
